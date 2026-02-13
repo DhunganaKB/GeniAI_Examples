@@ -1,0 +1,401 @@
+[
+  {
+    "note_id": "note_001",
+    "title": "Emergency Department Visit — Chest Pain",
+    "model": "gemini-2.5-flash",
+    "total_entities": 17,
+    "entities_by_class": {
+      "diagnosis": 5,
+      "medication": 5,
+      "vital_sign": 4,
+      "lab_result": 1,
+      "procedure": 2
+    },
+    "entities": [
+      {
+        "class": "diagnosis",
+        "text": "acute chest pain radiating to the left arm",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "hypertension",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "hyperlipidemia",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Lisinopril 10mg",
+        "attributes": {
+          "route": "orally",
+          "frequency": "once daily",
+          "indication": "hypertension"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Atorvastatin 40mg",
+        "attributes": {
+          "route": "orally",
+          "frequency": "at bedtime",
+          "indication": "hyperlipidemia"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "98 bpm",
+        "attributes": {
+          "measurement": "heart rate",
+          "status": "normal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "168/95 mmHg",
+        "attributes": {
+          "measurement": "blood pressure",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "96%",
+        "attributes": {
+          "measurement": "SpO2",
+          "status": "normal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "36.8°C",
+        "attributes": {
+          "measurement": "temperature",
+          "status": "normal"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "0.08 ng/mL",
+        "attributes": {
+          "test": "Troponin I",
+          "reference_range": "0.04 ng/mL",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "ST-segment elevation in leads II, III, and aVF",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Aspirin 325mg",
+        "attributes": {
+          "route": "orally",
+          "frequency": "stat"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Heparin 5000 units",
+        "attributes": {
+          "route": "IV bolus"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Nitroglycerin 0.4mg",
+        "attributes": {
+          "route": "sublingual",
+          "frequency": "PRN",
+          "indication": "chest pain"
+        }
+      },
+      {
+        "class": "procedure",
+        "text": "cardiac catheterization",
+        "attributes": {
+          "timing": "emergent"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "90% stenosis of the right coronary artery",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "procedure",
+        "text": "Percutaneous coronary intervention with drug-eluting stent placement",
+        "attributes": {}
+      }
+    ]
+  },
+  {
+    "note_id": "note_002",
+    "title": "Pediatric Follow-up — Asthma Management",
+    "model": "gemini-2.5-flash",
+    "total_entities": 9,
+    "entities_by_class": {
+      "diagnosis": 2,
+      "medication": 4,
+      "vital_sign": 2,
+      "adverse_reaction": 1
+    },
+    "entities": [
+      {
+        "class": "diagnosis",
+        "text": "asthma",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Fluticasone 44mcg",
+        "attributes": {
+          "route": "inhaled",
+          "frequency": "twice daily"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Albuterol 90mcg",
+        "attributes": {
+          "route": "inhaled",
+          "frequency": "PRN"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "280 L/min",
+        "attributes": {
+          "measurement": "Peak flow",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "97%",
+        "attributes": {
+          "measurement": "SpO2",
+          "status": "normal"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "poorly controlled persistent asthma",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Fluticasone 110mcg",
+        "attributes": {
+          "route": "inhaled",
+          "frequency": "twice daily"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Montelukast 5mg",
+        "attributes": {
+          "route": "orally",
+          "frequency": "at bedtime"
+        }
+      },
+      {
+        "class": "adverse_reaction",
+        "text": "mild oral thrush",
+        "attributes": {
+          "severity": "mild",
+          "related_medication": "Fluticasone"
+        }
+      }
+    ]
+  },
+  {
+    "note_id": "note_003",
+    "title": "ICU Progress Note — Sepsis",
+    "model": "gemini-2.5-flash",
+    "total_entities": 19,
+    "entities_by_class": {
+      "diagnosis": 5,
+      "medication": 3,
+      "vital_sign": 5,
+      "lab_result": 5,
+      "adverse_reaction": 1
+    },
+    "entities": [
+      {
+        "class": "diagnosis",
+        "text": "severe sepsis",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "urinary tract infection",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "E. coli bacteremia",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "type 2 diabetes",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "diagnosis",
+        "text": "chronic kidney disease stage 3",
+        "attributes": {
+          "status": "active"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Meropenem 1g",
+        "attributes": {
+          "route": "IV",
+          "frequency": "every 8 hours",
+          "indication": "severe sepsis"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Norepinephrine 0.15 mcg/kg/min",
+        "attributes": {
+          "route": "IV",
+          "frequency": "continuous infusion",
+          "indication": "vasopressor support"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "38.4°C",
+        "attributes": {
+          "measurement": "temperature",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "112 bpm",
+        "attributes": {
+          "measurement": "heart rate",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "92/58 mmHg",
+        "attributes": {
+          "measurement": "blood pressure",
+          "status": "critical"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "22 breaths/min",
+        "attributes": {
+          "measurement": "respiratory rate",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "vital_sign",
+        "text": "94%",
+        "attributes": {
+          "measurement": "SpO2",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "18,500/µL",
+        "attributes": {
+          "test": "WBC",
+          "reference_range": "4,500-11,000/µL",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "3.2 mmol/L",
+        "attributes": {
+          "test": "lactate",
+          "reference_range": "less than 2.0 mmol/L",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "2.8 mg/dL",
+        "attributes": {
+          "test": "creatinine",
+          "reference_range": "baseline of 1.5 mg/dL",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "12.5 ng/mL",
+        "attributes": {
+          "test": "procalcitonin",
+          "reference_range": "above threshold of 0.5 ng/mL",
+          "status": "abnormal"
+        }
+      },
+      {
+        "class": "medication",
+        "text": "Insulin glargine 20 units",
+        "attributes": {
+          "route": "subcutaneous",
+          "frequency": "at bedtime",
+          "indication": "diabetes management"
+        }
+      },
+      {
+        "class": "adverse_reaction",
+        "text": "mild thrombocytopenia",
+        "attributes": {
+          "severity": "mild",
+          "related_medication": "null"
+        }
+      },
+      {
+        "class": "lab_result",
+        "text": "98,000/µL",
+        "attributes": {
+          "test": "platelet count",
+          "reference_range": "150,000-400,000/µL",
+          "status": "abnormal"
+        }
+      }
+    ]
+  }
+]
