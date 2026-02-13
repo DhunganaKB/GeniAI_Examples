@@ -222,11 +222,6 @@ Entities by class:
 output/
 ├── medical_extractions.json        ← Combined structured results (all notes)
 ├── note_001_extractions.jsonl      ← LangExtract native format (per note)
-├── note_001_visualization.html     ← Interactive HTML highlighting (per note)
-├── note_002_extractions.jsonl
-├── note_002_visualization.html
-├── note_003_extractions.jsonl
-└── note_003_visualization.html
 ```
 
 ### Sample Structured Output
@@ -258,19 +253,12 @@ langextract-studio/
 ├── requirements.txt          # Python dependencies
 ├── .env.example              # API key template
 ├── .gitignore                # Git ignore rules
-├── LICENSE                   # Apache 2.0
 ├── README.md                 # This file
-├── ARTICLE.md                # Medium article (Markdown)
-├── article.html              # Medium article (styled HTML)
 ├── output/                   # Generated extraction results
 │   ├── medical_extractions.json
 │   ├── note_*_extractions.jsonl
 │   └── note_*_visualization.html
-└── images/
-    ├── architecture_diagram.svg
-    ├── comparison_table.svg
-    ├── streamlit_workflow.svg
-    └── use_cases.svg
+
 ```
 
 ---
